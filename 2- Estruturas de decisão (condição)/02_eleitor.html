@@ -5,11 +5,13 @@
     const dataNascimento = parseInt(prompt("informe sua data de nascimento:"))
     const tempoFalta = dataNascimento - 2006
 
-    if(dataNascimento <= 2006){
-        document.write(`Parabens! voce pode votar esse ano!`)
-    }
-    else{
-        document.write(`ainda faltam ${tempoFalta} anos para voce votar`)
-    }
-
+    let conceito
+    if(dataNascimento <= 2006) conceito = "pode votar"
+    else conceito = "nao pode votar"
+    
+    if(dataNascimento <=2006){
+    document.write(`Parabens! voce ${conceito}!`)}
+    
+    else document.write
+    (`voce ${conceito}! , ainda falta ${tempoFalta}`)
 </script>

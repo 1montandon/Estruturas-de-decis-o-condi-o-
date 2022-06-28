@@ -4,14 +4,18 @@
 
     //Entrada
     const idadePessoa = parseInt(prompt("informe quantos anos voçê tem"))
-    const quantosAnosMaiorIdade = 18 - idadePessoa
+    const quantosAnosMaiorIdade = 18 - idadePessoa 
 
-    if(idadePessoa >= 18){
-        document.write("você chegou a maoiridade")
+    let conceito
+
+    if (idadePessoa >= 18) conceito = "Maior de Idade"
+    else conceito = "Menor de idade"
+    
+    if (idadePessoa >= 18) {
+        document.write(`Voce é ${conceito} `)
     }
     else {
-        document.write(`ainda faltam ${quantosAnosMaiorIdade} para atingir a maioridade`)
+        document.write(`Voce é ${conceito}, ainda faltam ${quantosAnosMaiorIdade} para a maior idade`)
     }
-
 
 </script>

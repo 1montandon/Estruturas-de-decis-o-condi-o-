@@ -11,12 +11,22 @@
   );
 
   //processamento
-  const diferenca = notaLittleBrotherDepois - notaLittleBrother;
-  const acrescimo = diferenca / 4;
-  if (diferenca > 0) {
-    document.write("O little Brother aumentou a nota");
-    document.write(
-      `<br/> foram adicionados ${acrescimo} pontos a nota de Big Brother`
-    );
-  } else document.write("O little brother nao aumentou a nota <br/> ");
+  const diferenca = notaLittleBrotherDepois - notaLittleBrother
+
+  let acrescimo
+
+  if (diferenca > 0) acrescimo = diferenca / 4
+  else acrescimo = 0
+
+  if (acrescimo > 0) {
+    document.write(`O little Brother aumentou a nota
+      <br/> foram adicionados ${acrescimo} pontos a nota de Big Brother`
+    )
+  }
+  else document.write(`O little Brother não aumentou a nota
+      <br/>
+    foram adicionados ${acrescimo} pontos a nota de Big Brother`)
+
+
+
 </script>
