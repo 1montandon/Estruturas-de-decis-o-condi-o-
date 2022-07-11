@@ -1,23 +1,15 @@
 <script>
-    // Recebe um ano e informa se ele é bissexto ou não.
+  // Recebe um ano e informa se ele é bissexto ou não.
 
-    //entrada
-    const ano = parseInt(prompt("informe o ano"))
-    let conceito
+  //entrada
+  const ano = Number(prompt("informe o ano"))
+  let conceito
 
-    //Processamento // Saida
-    if (ano % 4 === 0){
-        if(ano % 100 != 0) {
-            conceito = "Bissexto"
-        }
-        else if{
-            
-        }
-       
+  //Processamento // Saida
+    if (ano % 4 === 0 && ano % 100 != 0 || ano % 400 === 0) {
+        conceito = "Bissexto"
     }
-    else
-    document.write("Não é um ano bissexto")
-
-
-
+    else conceito = "Não bissexto"
+    
+    document.write (`${conceito}`)
 </script>
